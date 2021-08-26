@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="fruit" onchange="calcSum()">
+         <option value="Smith">Apple Smith
+         </option>
+        
+        <option value="Pink">Pink Lady
+         </option>
+         
+        <option value="Hermon">Hermon
+        </option>
+
+         </select>
+
+        <input type="text" id="Kg" placeholder="Kg..."/>
+        <button onclick="calcSum()">חשב</button>
+
+         <div>
+            total price <input type="text" id="sum">
+        </div>
+
+         <script>
+             function calcSum() {
+             var fruitName = document.getElementById ("fruit").value;
+             var fruitKG = parseInt(document.getElementById ("Kg").value);
+             
+
+             if (fruitName ==="Smith") {
+                fruitKG = (document.getElementById ("sum").value) =fruitKG * 9.90;
+             }
+                
+                else if (fruitName ==="Pink") {
+                fruitKG = (document.getElementById ("sum").value) =fruitKG * 14.90;
+                }
+                
+                else if (fruitName ==="Hermon") {
+                fruitKG = (document.getElementById ("sum").value) =fruitKG * 29.90;
+                }
+             }
+            
+         </script>
+         </body>
+         </html>
